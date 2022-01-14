@@ -166,20 +166,20 @@
     <form>
         <div class="form-group">
           <label for="exampleFormControlInput1">Email</label>
-          <input id="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input onkeyup="validaEmail()" id="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         <div id="txtEmail"></div>
         </div>
         <div class="form-group">
           <label for="exampleFormControlSelect1">Nome</label>
-          <input onkeyup="validaNome()" id="nome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Seu nome">
+          <input onkeyup="validaNome()" id="nome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
         <div id="txtNome"></div>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect2">Comentário</label>
-          <textarea id="comentario" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        <div id="txtcom"></div>
+          <label for="exampleFormControlSelect2">Mensagem</label>
+          <textarea onkeyup="validaComentario()" id="comentario" class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Digite seu comentário"></textarea>
+        <div id="txtCom"></div>
         </div>
-        <button type="button" class="btn btn-outline-primary">Enviar formulário</button>
+        <button onclick="enviar()" type="button" class="btn btn-outline-primary">Enviar formulário</button>
       </form>
 <!--/Form-->
 
